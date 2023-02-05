@@ -10,3 +10,6 @@ E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\refint\ResumeProject.Entity.dll
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\ResumeProject.Entity.pdb
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\ref\ResumeProject.Entity.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\bin\Debug\net5.0\ResumeProject.Entity.runtimeconfig.json
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\bin\Debug\net5.0\ResumeProject.Entity.runtimeconfig.dev.json
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\ResumeProject.Entity.genruntimeconfig.cache
