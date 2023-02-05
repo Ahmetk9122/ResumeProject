@@ -1,10 +1,11 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using ResumeProject.Entity.Models;
 
 #nullable disable
 
-namespace ResumeProject.Entity.Models
+namespace ResumeProject.Dal.Concrete.Entityframework.Context
 {
     public partial class ResumeContext : DbContext
     {

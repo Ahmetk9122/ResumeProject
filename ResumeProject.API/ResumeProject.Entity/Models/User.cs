@@ -1,11 +1,12 @@
-﻿using System;
+﻿using ResumeProject.Entity.Base;
+using System;
 using System.Collections.Generic;
 
 #nullable disable
 
 namespace ResumeProject.Entity.Models
 {
-    public partial class User
+    public partial class User : EntityBase
     {
         public int Id { get; set; }
         public string Name { get; set; }

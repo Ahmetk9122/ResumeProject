@@ -10,3 +10,9 @@ E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Dal\obj\Debug\net
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Dal\obj\Debug\net5.0\refint\ResumeProject.Dal.dll
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Dal\obj\Debug\net5.0\ResumeProject.Dal.pdb
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Dal\obj\Debug\net5.0\ref\ResumeProject.Dal.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Dal\bin\Debug\net5.0\ResumeProject.Dal.runtimeconfig.json
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Dal\bin\Debug\net5.0\ResumeProject.Dal.runtimeconfig.dev.json
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Dal\bin\Debug\net5.0\ResumeProject.Entity.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Dal\bin\Debug\net5.0\ResumeProject.Entity.pdb
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Dal\obj\Debug\net5.0\ResumeProject.Dal.csproj.CopyComplete
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Dal\obj\Debug\net5.0\ResumeProject.Dal.genruntimeconfig.cache

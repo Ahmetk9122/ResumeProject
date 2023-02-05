@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "dTYBVPf9+gqrYJEstpC+C/gyTdWm1peIBHrk+f3MwkjGw8ONVwpa4/tiv1Gu4SIQ51ejlgOylijlHQOHn4sn1w==",
+  "dgSpecHash": "+msk7KYpJ/0X7URlGdfZg9X2jOVATzJtfXz/4DKMgXz4Vf1n0Lq5ARBoFCfwJfnS/PO3ULDnM5bMNYXE3WOXaw==",
   "success": true,
   "projectFilePath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ahmet\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

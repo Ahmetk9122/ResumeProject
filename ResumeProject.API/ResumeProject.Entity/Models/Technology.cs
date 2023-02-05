@@ -1,11 +1,12 @@
-﻿using System;
+﻿using ResumeProject.Entity.Base;
+using System;
 using System.Collections.Generic;
 
 #nullable disable
 
 namespace ResumeProject.Entity.Models
 {
-    public partial class Technology
+    public partial class Technology : EntityBase
     {
         public Technology()
         {
