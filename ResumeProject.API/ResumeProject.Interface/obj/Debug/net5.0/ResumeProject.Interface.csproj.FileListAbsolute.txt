@@ -1,0 +1,12 @@
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\bin\Debug\net5.0\ResumeProject.Interface.deps.json
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\bin\Debug\net5.0\ResumeProject.Interface.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\bin\Debug\net5.0\ResumeProject.Interface.pdb
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\ResumeProject.Interface.csproj.AssemblyReference.cache
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\ResumeProject.Interface.GeneratedMSBuildEditorConfig.editorconfig
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\ResumeProject.Interface.AssemblyInfoInputs.cache
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\ResumeProject.Interface.AssemblyInfo.cs
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\ResumeProject.Interface.csproj.CoreCompileInputs.cache
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\ResumeProject.Interface.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\refint\ResumeProject.Interface.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\ResumeProject.Interface.pdb
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\ref\ResumeProject.Interface.dll

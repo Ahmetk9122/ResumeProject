@@ -1,0 +1,12 @@
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\bin\Debug\net5.0\ResumeProject.Entity.deps.json
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\bin\Debug\net5.0\ResumeProject.Entity.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\bin\Debug\net5.0\ResumeProject.Entity.pdb
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\ResumeProject.Entity.csproj.AssemblyReference.cache
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\ResumeProject.Entity.GeneratedMSBuildEditorConfig.editorconfig
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\ResumeProject.Entity.AssemblyInfoInputs.cache
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\ResumeProject.Entity.AssemblyInfo.cs
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\ResumeProject.Entity.csproj.CoreCompileInputs.cache
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\ResumeProject.Entity.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\refint\ResumeProject.Entity.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\ResumeProject.Entity.pdb
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Entity\obj\Debug\net5.0\ref\ResumeProject.Entity.dll

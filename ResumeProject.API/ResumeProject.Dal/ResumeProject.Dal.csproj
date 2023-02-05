@@ -4,4 +4,12 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+    <Folder Include="Concrete\Entityframework\Context\" />
+    <Folder Include="Concrete\Entityframework\Repository\" />
+    <Folder Include="Concrete\Entityframework\UnitOfWork\" />
+    <Folder Include="Concrete\MicroORM\" />
+  </ItemGroup>
+
 </Project>
