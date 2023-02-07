@@ -6,6 +6,9 @@ using System.Collections.Generic;
 
 namespace ResumeProject.Entity.Models
 {
+    //partial class bir classı parçalamak için kullanılır.
+    //aynı isimde iki class olmaz ancak partial kullanarak oluşturabiliriz.
+    //Certificate class ise bir tane tanımlanabilir ancak birden fazla olması için partial olarak yapılabilir.
     public partial class Skill : EntityBase
     {
         public Skill()

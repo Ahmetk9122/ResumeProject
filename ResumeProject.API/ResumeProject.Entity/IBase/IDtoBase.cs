@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ResumeProject.Entity.IBase
 {
-    internal interface IDtoBase
+    public interface IDtoBase
     {
     }
 }

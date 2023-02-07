@@ -14,7 +14,8 @@ namespace ResumeProject.Bll
 
     internal class ObjectMapper
     {
-        //Ne zaman ihtiyacımız varsa o zaman kullanılacak
+        //Proje ayağa kaltığında yok ancak Neyen ne zaman ihtiyacımız varsa o zaman kullanılacak
+        //Tek bir tane mapping Profile olmasına gerek yok proje büyüklüğüne göre birden fazla mapping profile olabilir.Örn => stok ,müşteri mapping profile gibi.
         static readonly Lazy<IMapper> lazy = new Lazy<IMapper>(() =>
         {
             var config = new MapperConfiguration(cfg =>

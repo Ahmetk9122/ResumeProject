@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace ResumeProject.Entity.IBase
 {
-    internal interface IResponse
+    public interface IResponse
     {
     }
-    internal interface IResponse<T>
+    public interface IResponse<T>
     {
     }
 }

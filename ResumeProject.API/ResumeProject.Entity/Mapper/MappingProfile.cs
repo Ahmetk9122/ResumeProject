@@ -14,6 +14,9 @@ namespace ResumeProject.Entity.Mapper
     {
         public MappingProfile()
         {
+
+            //Reverse map sayesinde entityler dtolara dtolar da entitye dönüştürülmesi sağlanmıştır.
+            //Kullanılması için ObjectMapper classı bll (businness logic layer) katmanında yapılmalıdır. Çünkü mimariye göre mapping işlemleri bll katmanını görevidir.
             CreateMap<Certificate , CertificateDto>().ReverseMap();
             CreateMap<Education, EducationDto>().ReverseMap();
             CreateMap<Language, LanguageDto>().ReverseMap();
