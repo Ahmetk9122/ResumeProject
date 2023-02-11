@@ -10,6 +10,8 @@ namespace ResumeProject.Interface
 {
     public interface ICertificateService :IGenericService<Certificate, CertificateDto>
     {
+        //Interface Interfaceden kalıtım alabilir.Kalıtım aldığında üst sınıfın metodlarını implemente etmez.
+ 
         IQueryable<CertificateDto> GetTotalCertificate();
     }
 }

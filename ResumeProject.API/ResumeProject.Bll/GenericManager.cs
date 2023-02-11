@@ -12,6 +12,15 @@ namespace ResumeProject.Bll
 {
     public class GenericManager<T, TDto> : IGenericService<T, TDto> where T : EntityBase where TDto : DtoBase
     {
+        //Bir class bir internfaceden kalıtım aldığında implemente etme zorunluluğu vardır.
+        //Bir class bir classdan kalıtım aldığında implement etme zorunluluğu yoktur direk üst sınıf protected ve public olan özellikleri kullanabilir.
+        //Bir sınıfı abstract tasarlarsak (GenericService örn)  abstract classtan nesne türetemeyiz amacı bir şablon oluşturmak ve kalıtım vererek kullanmayı sağlar
+        //Kalıtım verebilirim ve abstract classtan nesne türetemem. 
+        //Soru=> bir class var nesne türetebileyim ancak kesinlikle kaltıım veremeyim.
+        //Cevap =>sealed yaparsak kalıtım verilemez ancak türetmeye devam edebiliriz. => public sealed GenericManager.
+        //Lazyloading  avantajları order çektiğimizde order a bağlı tüm alt detaylarla birlikte gelir örneğin orderin içinde order detail ve customer bilgileri
+        //varsa lazy loadıng yaptığımızda her şey gelir. Avantajı az kod çok iş dezavantajı sorgu süresi uzar.
+        //EagerLoading de Orderi çekersek sadece order gelir eğer order içinde OrderDetail veya cstomer bilgisini de istersek ozaman include ile içine aktarırız.
         //unitOfWork
         //IServiceProvider
         //GenericRepository
