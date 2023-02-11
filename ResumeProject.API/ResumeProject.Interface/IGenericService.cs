@@ -34,8 +34,17 @@ namespace ResumeProject.Interface
         //Async Silme
         Task<IResponse<bool>> DeleteByIdAsync(int id, bool saveChanges = true);
         //IQueryable Listeleme
+        //performans için IQueryable çalıştırılır.
         IQueryable<TDto> GetQueryable();
         //Params ile getirme
         //Patch ile güncelleme
+
+        //Task Asenkronlaştırma tekniği 
+        //unit of works transaction yönetimi tekniği
+        //Ienumerayble bütün veriyi çeker ve bellekte sonucu döndürmeye çalışır.
+        //IQueryable sorguyu database de yapar ve sonucu döndürür. bütün veiyi çekmediği için bizim için daha hızlı ve kullanışlıdır.
+        // List mantığı => bir sorgumuz var ve çıktı için sürekli sorguları ekliyoruz Kocaelinde yaşayan arabası olan rengi beyaz olan bütün sorgu bittiğinde ve toList
+        //dediğimizde bize gerekli olan sorguyu döndürür.
+
     }
 }

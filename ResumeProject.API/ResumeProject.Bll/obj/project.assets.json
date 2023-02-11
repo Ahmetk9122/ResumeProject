@@ -1508,6 +1508,19 @@
         "runtime": {
           "bin/placeholder/ResumeProject.Entity.dll": {}
         }
+      },
+      "ResumeProject.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ResumeProject.Entity": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ResumeProject.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ResumeProject.Interface.dll": {}
+        }
       }
     }
   },
@@ -5741,12 +5754,18 @@
       "type": "project",
       "path": "../ResumeProject.Entity/ResumeProject.Entity.csproj",
       "msbuildProject": "../ResumeProject.Entity/ResumeProject.Entity.csproj"
+    },
+    "ResumeProject.Interface/1.0.0": {
+      "type": "project",
+      "path": "../ResumeProject.Interface/ResumeProject.Interface.csproj",
+      "msbuildProject": "../ResumeProject.Interface/ResumeProject.Interface.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "AutoMapper >= 11.0.1",
-      "ResumeProject.Entity >= 1.0.0"
+      "ResumeProject.Entity >= 1.0.0",
+      "ResumeProject.Interface >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5778,6 +5797,9 @@
           "projectReferences": {
             "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj": {
               "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj"
+            },
+            "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Interface\\ResumeProject.Interface.csproj": {
+              "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Interface\\ResumeProject.Interface.csproj"
             }
           }
         }
