@@ -12,6 +12,10 @@ namespace ResumeProject.Bll
 {
     public class GenericManager<T, TDto> : IGenericService<T, TDto> where T : EntityBase where TDto : DtoBase
     {
+        //unitOfWork
+        //IServiceProvider
+        //GenericRepository
+        //constructor
         public IResponse<TDto> Add(TDto item, bool saveChanges = true)
         {
             throw new NotImplementedException();

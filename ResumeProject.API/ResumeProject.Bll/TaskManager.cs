@@ -1,14 +1,14 @@
 ﻿using ResumeProject.Entity.Dto;
 using ResumeProject.Entity.Models;
+using ResumeProject.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace ResumeProject.Interface
+namespace ResumeProject.Bll
 {
-    public interface ITechnologyService : IGenericService<Technology, TechnologyDto>
+    public class TaskManager : GenericManager<Task, TaskDto>,ITaskService
     {
     }
 }
