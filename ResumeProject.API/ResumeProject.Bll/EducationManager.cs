@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace ResumeProject.Bll
 {
-    public class EducationManager : GenericManager<Education, EducationDto>,IEducationService
+    public class EducationManager : GenericManager<Education, EducationDto>, IEducationService
     {
+        public EducationManager(IServiceProvider service) : base(service)
+        {
+        }
     }
 }

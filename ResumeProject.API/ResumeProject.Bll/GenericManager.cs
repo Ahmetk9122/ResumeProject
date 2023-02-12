@@ -1,4 +1,8 @@
-﻿using ResumeProject.Entity.Base;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using ResumeProject.Dal.Abstract;
+using ResumeProject.Dal.Concrete.Entityframework.UnitOfWork;
+using ResumeProject.Entity.Base;
 using ResumeProject.Entity.IBase;
 using ResumeProject.Interface;
 using System;
@@ -25,19 +29,116 @@ namespace ResumeProject.Bll
         //IServiceProvider
         //GenericRepository
         //constructor
+
+        #region Variables
+        private readonly IUnitOfWork unitofWork;
+        private readonly IServiceProvider service;
+        private readonly IGenericRepository<T> repository;
+        #endregion
+
+        #region Constructor
+
+        public GenericManager(IServiceProvider service)
+        {
+            this.service = service;
+            unitofWork = service.GetService<IUnitOfWork>();
+            repository = unitofWork.GetRepository<T>();
+
+        }
+        #endregion
+
+        #region Methods
         public IResponse<TDto> Add(TDto item, bool saveChanges = true)
         {
-            throw new NotImplementedException();
+               try
+            {
+                //dto tipi model(T) tipine dönüştürülüyor.
+                //sebebi:dal T ile çalışır.
+                var model = ObjectMapper.Mapper.Map<T>(item);
+                //var resolvesResult = String.Join(',',model.GetType().GetProperties().Select(x=> $" - {x.Name} : {x.GetValue(model) ?? ""} - "));
+                var result = repository.Add(model);
+
+                if (saveChanges)
+                    Save();//kaydetme işlemi olduğundan transaction'ı commit'liyoruz.
+
+                //dönüş tipini ayarlıyoruz
+                return new Response<TDto>
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    Message = "Success",
+                    Data = ObjectMapper.Mapper.Map<T, TDto>(result)
+                };
+            }
+            catch (Exception ex)
+            {
+                //hata olma durumunda dönecek veri seti
+                return new Response<TDto>
+                {
+                    StatusCode = StatusCodes.Status500InternalServerError,
+                    Message = $"Error:{ex.Message}",
+                    Data = null
+                };
+            }
         }
 
-        public Task<IResponse<TDto>> AddAsync(TDto item, bool saveChanges = true)
+        public async Task<IResponse<TDto>> AddAsync(TDto item, bool saveChanges = true)
         {
-            throw new NotImplementedException();
+            try
+            {
+                //dto tipi model(T) tipine dönüştürülüyor.
+                //sebebi:dal T ile çalışır.
+                var model = ObjectMapper.Mapper.Map<T>(item);
+                //var resolvesResult = String.Join(',',model.GetType().GetProperties().Select(x=> $" - {x.Name} : {x.GetValue(model) ?? ""} - "));
+                var result = await repository.AddAsync(model);
+
+                if (saveChanges)
+                    Save();//kaydetme işlemi olduğundan transaction'ı commit'liyoruz.
+
+                //dönüş tipini ayarlıyoruz
+                return new Response<TDto>
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    Message = "Success",
+                    Data = ObjectMapper.Mapper.Map<T, TDto>(result)
+                };
+            }
+            catch (Exception ex)
+            {
+                //hata olma durumunda dönecek veri seti
+                return new Response<TDto>
+                {
+                    StatusCode = StatusCodes.Status500InternalServerError,
+                    Message = $"Error:{ex.Message}",
+                    Data = null
+                };
+            }
         }
 
         public IResponse<bool> DeleteById(int id, bool saveChanges = true)
         {
-            throw new NotImplementedException();
+            try
+            {
+                repository.DeleteById(id);
+
+                if (saveChanges)
+                    Save();
+
+                return new Response<bool>
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    Message = "Success",
+                    Data = true
+                };
+            }
+            catch (Exception ex)
+            {
+                return new Response<bool>
+                {
+                    StatusCode = StatusCodes.Status500InternalServerError,
+                    Message = $"Error:{ex.Message}",
+                    Data = false
+                };
+            }
         }
 
         public Task<IResponse<bool>> DeleteByIdAsync(int id, bool saveChanges = true)
@@ -47,32 +148,150 @@ namespace ResumeProject.Bll
 
         public IResponse<TDto> Find(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var entity = ObjectMapper.Mapper.Map<T, TDto>(repository.Find(id));
+
+                return new Response<TDto>
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    Message = "Success",
+                    Data = entity
+                };
+            }
+            catch (Exception ex)
+            {
+
+                return new Response<TDto>
+                {
+                    StatusCode = StatusCodes.Status500InternalServerError,
+                    Message = $"Error:{ex.Message}",
+                    Data = null
+                };
+            }
         }
 
         public IResponse<List<TDto>> GetAll()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var list = repository.GetAll();
+
+                var listDto = list.Select(x => ObjectMapper.Mapper.Map<TDto>(x)).ToList();
+
+                return new Response<List<TDto>>
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    Message = "Success",
+                    Data = listDto
+                };
+            }
+            catch (Exception ex)
+            {
+
+                return new Response<List<TDto>>
+                {
+                    StatusCode = StatusCodes.Status500InternalServerError,
+                    Message = $"Error:{ex.Message}",
+                    Data = null
+                };
+            }
         }
 
         public IResponse<List<TDto>> GetAll(Expression<Func<T, bool>> expression)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var list = repository.GetAll(expression);
+
+                var listDto = list.Select(x => ObjectMapper.Mapper.Map<TDto>(x)).ToList();
+
+                return new Response<List<TDto>>
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    Message = "Success",
+                    Data = listDto
+                };
+            }
+            catch (Exception ex)
+            {
+
+                return new Response<List<TDto>>
+                {
+                    StatusCode = StatusCodes.Status500InternalServerError,
+                    Message = $"Error:{ex.Message}",
+                    Data = null
+                };
+            }
         }
 
-        public IQueryable<TDto> GetQueryable()
+        public IResponse<IQueryable<TDto>> GetQueryable()
         {
-            throw new NotImplementedException();
-        }
+            try
+            {
+                var list = repository.GetQueryable();
 
+                var listDto = list.Select(x => ObjectMapper.Mapper.Map<TDto>(x));
+
+                return new Response<IQueryable<TDto>>
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    Message = "Success",
+                    Data = listDto
+                };
+            }
+            catch (Exception ex)
+            {
+
+                return new Response<IQueryable<TDto>>
+                {
+                    StatusCode = StatusCodes.Status500InternalServerError,
+                    Message = $"Error:{ex.Message}",
+                    Data = null
+                };
+            }
+        }
         public IResponse<TDto> Update(TDto item, bool saveChanges = true)
         {
-            throw new NotImplementedException();
+            try
+            {
+                //dto tipi model(T) tipine dönüştürülüyor.
+                //sebebi:dal T ile çalışır.
+                var model = ObjectMapper.Mapper.Map<T>(item);
+                //var resolvesResult = String.Join(',',model.GetType().GetProperties().Select(x=> $" - {x.Name} : {x.GetValue(model) ?? ""} - "));
+                var result = repository.Update(model);
+
+                if (saveChanges)
+                    Save();//kaydetme işlemi olduğundan transaction'ı commit'liyoruz.
+
+                //dönüş tipini ayarlıyoruz
+                return new Response<TDto>
+                {
+                    StatusCode = StatusCodes.Status200OK,
+                    Message = "Update Success",
+                    Data = ObjectMapper.Mapper.Map<T, TDto>(result)
+                };
+            }
+            catch (Exception ex)
+            {
+                //hata olma durumunda dönecek veri seti
+                return new Response<TDto>
+                {
+                    StatusCode = StatusCodes.Status500InternalServerError,
+                    Message = $"Error:{ex.Message}",
+                    Data = null
+                };
+            }
         }
 
         public Task<IResponse<TDto>> UpdateAsync(TDto item, bool saveChanges = true)
         {
             throw new NotImplementedException();
         }
+        public void Save()
+        {
+          unitofWork.SaveChanges();
+        }
+        #endregion
     }
 }

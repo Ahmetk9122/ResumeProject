@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace ResumeProject.Bll
 {
-    public class TechnologyManager : GenericManager<Technology,TechnologyDto>,ITechnologyService
+    public class TechnologyManager : GenericManager<Technology, TechnologyDto>, ITechnologyService
     {
+        public TechnologyManager(IServiceProvider service) : base(service)
+        {
+        }
     }
 }

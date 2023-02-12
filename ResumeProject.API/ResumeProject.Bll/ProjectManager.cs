@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace ResumeProject.Bll
 {
-    public class ProjectManager:GenericManager<Project,ProjectDto>,IProjectService
+    public class ProjectManager : GenericManager<Project, ProjectDto>, IProjectService
     {
+        public ProjectManager(IServiceProvider service) : base(service)
+        {
+        }
     }
 }

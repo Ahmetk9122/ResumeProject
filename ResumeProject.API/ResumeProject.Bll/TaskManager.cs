@@ -8,7 +8,10 @@ using System.Text;
 
 namespace ResumeProject.Bll
 {
-    public class TaskManager : GenericManager<Task, TaskDto>,ITaskService
+    public class TaskManager : GenericManager<Task, TaskDto>, ITaskService
     {
+        public TaskManager(IServiceProvider service) : base(service)
+        {
+        }
     }
 }

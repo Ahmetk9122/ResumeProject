@@ -1,4 +1,5 @@
 ﻿using ResumeProject.Entity.Dto;
+using ResumeProject.Entity.IBase;
 using ResumeProject.Entity.Models;
 using System;
 using System.Collections.Generic;
@@ -12,6 +13,6 @@ namespace ResumeProject.Interface
     {
         //Interface Interfaceden kalıtım alabilir.Kalıtım aldığında üst sınıfın metodlarını implemente etmez.
  
-        IQueryable<CertificateDto> GetTotalCertificate();
+       IResponse<IQueryable<CertificateDto>> GetTotalCertificate();
     }
 }

@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace ResumeProject.Bll
 {
-    public class LoginUserManager : GenericManager<LoginUser, LoginUserDto>,ILoginUserService
+    public class LoginUserManager : GenericManager<LoginUser, LoginUserDto>, ILoginUserService
     {
+        public LoginUserManager(IServiceProvider service) : base(service)
+        {
+        }
     }
 }

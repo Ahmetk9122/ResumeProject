@@ -35,7 +35,8 @@ namespace ResumeProject.Interface
         Task<IResponse<bool>> DeleteByIdAsync(int id, bool saveChanges = true);
         //IQueryable Listeleme
         //performans için IQueryable çalıştırılır.
-        IQueryable<TDto> GetQueryable();
+        IResponse<IQueryable<TDto>> GetQueryable();
+        void Save();
         //Params ile getirme
         //Patch ile güncelleme
 

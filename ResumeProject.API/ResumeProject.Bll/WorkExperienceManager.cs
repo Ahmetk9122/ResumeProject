@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace ResumeProject.Bll
 {
-    public class WorkExperienceManager:GenericManager<WorkExperience, WorkExperienceDto>, IWorkExperienceService
+    public class WorkExperienceManager : GenericManager<WorkExperience, WorkExperienceDto>, IWorkExperienceService
     {
+        public WorkExperienceManager(IServiceProvider service) : base(service)
+        {
+        }
     }
 }

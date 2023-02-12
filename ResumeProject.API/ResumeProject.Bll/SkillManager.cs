@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace ResumeProject.Bll
 {
-    public class SkillManager:GenericManager<Skill,SkillDto>,ISkillService
+    public class SkillManager : GenericManager<Skill, SkillDto>, ISkillService
     {
+        public SkillManager(IServiceProvider service) : base(service)
+        {
+        }
     }
 }

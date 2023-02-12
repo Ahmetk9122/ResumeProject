@@ -6,9 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ResumeProject.Dal\ResumeProject.Dal.csproj" />
     <ProjectReference Include="..\ResumeProject.Entity\ResumeProject.Entity.csproj" />
     <ProjectReference Include="..\ResumeProject.Interface\ResumeProject.Interface.csproj" />
   </ItemGroup>

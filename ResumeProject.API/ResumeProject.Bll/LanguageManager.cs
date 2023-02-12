@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace ResumeProject.Bll
 {
-    public class LanguageManager : GenericManager<Language, LanguageDto>,ILanguageService
+    public class LanguageManager : GenericManager<Language, LanguageDto>, ILanguageService
     {
+        public LanguageManager(IServiceProvider service) : base(service)
+        {
+        }
     }
 }

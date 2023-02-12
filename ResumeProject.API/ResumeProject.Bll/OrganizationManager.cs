@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace ResumeProject.Bll
 {
-    public class OrganizationManager : GenericManager<Organization, OrganizationDto>,IOrganizationService
+    public class OrganizationManager : GenericManager<Organization, OrganizationDto>, IOrganizationService
     {
+        public OrganizationManager(IServiceProvider service) : base(service)
+        {
+        }
     }
 }
