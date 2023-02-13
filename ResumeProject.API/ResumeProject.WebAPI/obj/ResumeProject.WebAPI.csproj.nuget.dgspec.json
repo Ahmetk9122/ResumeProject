@@ -4,6 +4,286 @@
     "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.WebAPI\\ResumeProject.WebAPI.csproj": {}
   },
   "projects": {
+    "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Bll\\ResumeProject.Bll.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Bll\\ResumeProject.Bll.csproj",
+        "projectName": "ResumeProject.Bll",
+        "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Bll\\ResumeProject.Bll.csproj",
+        "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
+        "outputPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Bll\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Dal\\ResumeProject.Dal.csproj": {
+                "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Dal\\ResumeProject.Dal.csproj"
+              },
+              "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj": {
+                "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj"
+              },
+              "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Interface\\ResumeProject.Interface.csproj": {
+                "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Interface\\ResumeProject.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Dal\\ResumeProject.Dal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Dal\\ResumeProject.Dal.csproj",
+        "projectName": "ResumeProject.Dal",
+        "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Dal\\ResumeProject.Dal.csproj",
+        "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
+        "outputPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Dal\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj": {
+                "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj",
+        "projectName": "ResumeProject.Entity",
+        "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj",
+        "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
+        "outputPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Interface\\ResumeProject.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Interface\\ResumeProject.Interface.csproj",
+        "projectName": "ResumeProject.Interface",
+        "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Interface\\ResumeProject.Interface.csproj",
+        "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
+        "outputPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj": {
+                "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Entity\\ResumeProject.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.WebAPI\\ResumeProject.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +307,17 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Bll\\ResumeProject.Bll.csproj": {
+                "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Bll\\ResumeProject.Bll.csproj"
+              },
+              "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Dal\\ResumeProject.Dal.csproj": {
+                "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Dal\\ResumeProject.Dal.csproj"
+              },
+              "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Interface\\ResumeProject.Interface.csproj": {
+                "projectPath": "E:\\ResumeProject\\ResumeProject\\ResumeProject.API\\ResumeProject.Interface\\ResumeProject.Interface.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

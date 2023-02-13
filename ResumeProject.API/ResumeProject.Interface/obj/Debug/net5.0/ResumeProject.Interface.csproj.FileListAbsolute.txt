@@ -10,3 +10,6 @@ E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Deb
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\refint\ResumeProject.Interface.dll
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\ResumeProject.Interface.pdb
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\ref\ResumeProject.Interface.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\bin\Debug\net5.0\ResumeProject.Entity.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\bin\Debug\net5.0\ResumeProject.Entity.pdb
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Interface\obj\Debug\net5.0\ResumeProject.Interface.csproj.CopyComplete

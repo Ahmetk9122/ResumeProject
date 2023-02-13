@@ -17,6 +17,17 @@
           "ResumeProject.Dal.dll": {}
         }
       },
+      "AutoMapper/11.0.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.1.0"
+          }
+        }
+      },
       "Humanizer.Core/2.8.26": {
         "runtime": {
           "lib/netstandard2.0/Humanizer.dll": {
@@ -1070,6 +1081,7 @@
       },
       "ResumeProject.Entity/1.0.0": {
         "dependencies": {
+          "AutoMapper": "11.0.1",
           "Microsoft.EntityFrameworkCore": "5.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.15"
         },
@@ -1084,6 +1096,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/11.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WIadGC1pIwbnyTubvI577p3F++Bsj9q2Q3OaAc1I0QS+JhupN1xkdrPBhI9bPIeg63zM81tZplUNYkqU1HE5jQ==",
+      "path": "automapper/11.0.1",
+      "hashPath": "automapper.11.0.1.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

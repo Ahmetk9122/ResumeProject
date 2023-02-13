@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 using ResumeProject.Dal.Abstract;
 using ResumeProject.Entity.Base;
 using ResumeProject.Entity.Dto;
@@ -18,6 +19,7 @@ namespace ResumeProject.Bll
         public readonly ICertificateRepository certificateRepository;
         public CertificateManager(IServiceProvider service) : base(service)
         {
+            certificateRepository=service.GetService<ICertificateRepository>();
         }
 
         //ICertificateRepository

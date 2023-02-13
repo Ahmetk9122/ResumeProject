@@ -2,11 +2,18 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using ResumeProject.Bll;
+using ResumeProject.Dal.Abstract;
+using ResumeProject.Dal.Concrete.Entityframework.Context;
+using ResumeProject.Dal.Concrete.Entityframework.Repository;
+using ResumeProject.Dal.Concrete.Entityframework.UnitOfWork;
+using ResumeProject.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +33,26 @@ namespace ResumeProject.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            #region JwtTokenService
+            #endregion
+
+            #region AplicationContext
+            services.AddDbContext<ResumeContext>();
+            services.AddScoped<DbContext, ResumeContext>();
+            #endregion
+
+            #region ServiceSection
+            services.AddScoped<ICertificateService, CertificateManager>();
+            #endregion
+
+            #region RepositorySection
+            services.AddScoped<ICertificateRepository, CertificateRepository>();
+            #endregion
+
+            #region UnitOfWork
+            services.AddScoped<IUnitOfWork, UnitofWork>();
+            #endregion
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

@@ -10,3 +10,10 @@ E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Bll\obj\Debug\net
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Bll\obj\Debug\net5.0\refint\ResumeProject.Bll.dll
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Bll\obj\Debug\net5.0\ResumeProject.Bll.pdb
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Bll\obj\Debug\net5.0\ref\ResumeProject.Bll.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Bll\bin\Debug\net5.0\ResumeProject.Dal.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Bll\bin\Debug\net5.0\ResumeProject.Entity.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Bll\bin\Debug\net5.0\ResumeProject.Interface.dll
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Bll\bin\Debug\net5.0\ResumeProject.Dal.pdb
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Bll\bin\Debug\net5.0\ResumeProject.Entity.pdb
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Bll\bin\Debug\net5.0\ResumeProject.Interface.pdb
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.Bll\obj\Debug\net5.0\ResumeProject.Bll.csproj.CopyComplete

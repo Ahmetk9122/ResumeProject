@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ResumeProject.Dal.Concrete.Entityframework.Repository
 {
-    internal class CertificateRepository : GenericRepository<Certificate>, ICertificateRepository
+    public class CertificateRepository : GenericRepository<Certificate>, ICertificateRepository
     {
 
         //base kalıtım alınan argümana gönderilmek için kullanılır.

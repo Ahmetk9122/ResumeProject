@@ -9,14 +9,14 @@ namespace ResumeProject.Dal.Concrete.Entityframework.Context
 {
     public partial class ResumeContext : DbContext
     {
-        public ResumeContext()
-        {
-        }
+        //public ResumeContext()
+        //{
+        //}
 
-        public ResumeContext(DbContextOptions<ResumeContext> options)
-            : base(options)
-        {
-        }
+        //public ResumeContext(DbContextOptions<ResumeContext> options)
+        //    : base(options)
+        //{
+        //}
 
         public virtual DbSet<Certificate> Certificates { get; set; }
         public virtual DbSet<Education> Educations { get; set; }

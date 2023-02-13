@@ -9,7 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ResumeProject.Bll\ResumeProject.Bll.csproj" />
+    <ProjectReference Include="..\ResumeProject.Dal\ResumeProject.Dal.csproj" />
+    <ProjectReference Include="..\ResumeProject.Interface\ResumeProject.Interface.csproj" />
   </ItemGroup>
 
 </Project>
