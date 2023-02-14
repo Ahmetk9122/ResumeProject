@@ -43,10 +43,33 @@ namespace ResumeProject.WebAPI
 
             #region ServiceSection
             services.AddScoped<ICertificateService, CertificateManager>();
+            services.AddScoped<IEducationService, EducationManager>();
+            services.AddScoped<ILanguageService, LanguageManager>();
+            services.AddScoped<ILoginUserService, LoginUserManager>();
+            services.AddScoped<IOrganizationService, OrganizationManager>();
+            services.AddScoped<IProjectService, ProjectManager>();
+            services.AddScoped<ITaskService, TaskManager>();
+            services.AddScoped<ITechnologyService, TechnologyManager>();
+            services.AddScoped<IUserService, UserManager>();
+            services.AddScoped<IWorkExperienceService, WorkExperienceManager>();
+            services.AddScoped<ISkillService, SkillManager>();
+
+
             #endregion
 
             #region RepositorySection
             services.AddScoped<ICertificateRepository, CertificateRepository>();
+            services.AddScoped<IEducationRepository, EducationRepository>();
+            services.AddScoped<ILanguageRepository, LanguageRepository>();
+            services.AddScoped<ILoginUserRepository, LoginUserRepository>();
+            services.AddScoped<IOrganizationRepository, OrganizationRepository>();
+            services.AddScoped<IProjectRepository, ProjectRepository>();
+            services.AddScoped<ITaskRepository, TaskRepository>();
+            services.AddScoped<ITechnologyRepository, TechnologyRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IWorkExperienceRepository, WorkExperienceRepository>();
+            services.AddScoped<ISkillRepository, SkillRepository>();
+
             #endregion
 
             #region UnitOfWork
