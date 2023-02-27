@@ -39,7 +39,6 @@ E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
@@ -65,3 +64,4 @@ E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\net5.0\ResumeProject.Dal.dll
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\net5.0\ResumeProject.Bll.pdb
 E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\net5.0\ResumeProject.Dal.pdb
+E:\ResumeProject\ResumeProject\ResumeProject.API\ResumeProject.WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

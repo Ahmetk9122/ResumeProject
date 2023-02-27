@@ -1,4 +1,5 @@
 ﻿using ResumeProject.Entity.Dto;
+using ResumeProject.Entity.IBase;
 using ResumeProject.Entity.Models;
 using System;
 using System.Collections.Generic;
@@ -10,5 +11,6 @@ namespace ResumeProject.Interface
 {
     public interface ILoginUserService : IGenericService<LoginUser, LoginUserDto>
     {
+        IResponse<UserTokenDto> Login(LoginUserDto login);
     }
 }

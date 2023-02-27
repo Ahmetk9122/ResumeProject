@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ResumeProject.Entity.Base;
 using ResumeProject.Entity.IBase;
@@ -10,6 +12,7 @@ namespace ResumeProject.WebAPI.Base
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes =JwtBearerDefaults.AuthenticationScheme)]
     public class ApiBaseController<TService,T,TDto> : ControllerBase where TService : IGenericService<T,TDto> where T:EntityBase where TDto:DtoBase
     {
         private readonly TService service;
@@ -20,6 +23,7 @@ namespace ResumeProject.WebAPI.Base
         //api/customer/find
         //api/customer/Getir
         [HttpGet("Find")]
+        [AllowAnonymous]
         public IResponse<TDto> Find(int id)
         {
             try
@@ -38,6 +42,7 @@ namespace ResumeProject.WebAPI.Base
         }
 
         [HttpGet("GetAll")]
+        [AllowAnonymous]
         public IResponse<List<TDto>> GetAll()
         {
             try

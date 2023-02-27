@@ -28,8 +28,11 @@ namespace ResumeProject.Entity.Mapper
             CreateMap<Technology, TechnologyDto>().ReverseMap();
             CreateMap<User, UserDto>().ReverseMap();
             CreateMap<WorkExperience, WorkExperienceDto>().ReverseMap();
+            CreateMap<LoginDto, LoginUserDto>();
+            CreateMap<LoginUserDto, LoginDto>();
 
-            
+
+
 
         }
     }
